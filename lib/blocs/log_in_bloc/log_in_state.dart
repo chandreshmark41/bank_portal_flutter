@@ -38,3 +38,9 @@ class CustomerIdLogInState extends LogInState {
   @override
   List<Object?> get props => [];
 }
+
+class SendOtpButtonState extends LogInState {
+
+  @override
+  List<Object?> get props => [];
+}

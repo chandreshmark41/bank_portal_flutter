@@ -27,6 +27,13 @@ class LogInBloc extends Bloc<LogInEvent, LogInState> {
         }
     );
 
+    on<SendOtpButtonEvent>(
+        (event, emit) async {
+          //Navigator.pushNamed(context, "/otp_verification_page");
+          emit(SendOtpButtonState());
+        }
+    );
+
     // on<LoadUserEvent>(
     //         (event, emit) async {
     //       emit(UserLoadingState());

@@ -2,6 +2,7 @@ import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_blocs.dart';
 import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_event.dart';
 import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_state.dart';
 import 'package:bank_portal_flutter/pages/log_in_model.dart';
+import 'package:bank_portal_flutter/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -51,7 +52,13 @@ class _LogInPageState extends State<LogInPage> {
             ),),
             backgroundColor: FlutterFlowTheme.of(context).axisMarronColor,
           ),
-          body: BlocBuilder<LogInBloc, LogInState>(builder: (context, state) {
+          body: BlocConsumer<LogInBloc, LogInState>(
+              listener: (context,state){
+                if(state is SendOtpButtonState){
+                  Navigator.pushNamed(context, "/otp_verification_page");
+                }
+              },
+              builder: (context, state) {
             if (state is MobileLogInState) {
               dateTimeString = "DD-MM-YYYY";
             }
@@ -517,14 +524,16 @@ class _LogInPageState extends State<LogInPage> {
                                               ),
                                               child: new Text('Send OTP'),
                                               onPressed: () {
-                                                // BlocProvider.of<LogInBloc>(context)
-                                                //     .add(CustomerIdLogInEvent());
+                                                //Navigator.pushNamed(context, "/otp_verification_page");
+                                                BlocProvider.of<LogInBloc>(context)
+                                                    .add(SendOtpButtonEvent());
                                               },
                                             ),
                                           ),
                                         )
                                       ],
                                     ),
+
                                   if (state is CustomerIdLogInState)
                                     Column(
                                       children: [

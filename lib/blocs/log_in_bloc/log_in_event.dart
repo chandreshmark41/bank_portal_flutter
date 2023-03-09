@@ -26,3 +26,9 @@ class CustomerIdLogInEvent extends LogInEvent {
   List<Object?> get props => [];
 
 }
+
+class SendOtpButtonEvent extends LogInEvent{
+
+  @override
+  List<Object?> get props => [];
+}

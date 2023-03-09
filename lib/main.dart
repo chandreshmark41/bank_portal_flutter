@@ -1,5 +1,7 @@
 import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_blocs.dart';
 import 'package:bank_portal_flutter/pages/log_in.dart';
+import 'package:bank_portal_flutter/pages/otp_verification.dart';
+import 'package:bank_portal_flutter/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: '/',
+      routes: {
+        '/':(context) =>  const LogInPage(title: 'Flutter Bloc Banking'),
+        '/otp_verification_page':(context) => const OtpVerificationPage(),
+      },
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,7 +33,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const LogInPage(title: 'Flutter Bloc Banking'),
+      //home: const LogInPage(title: 'Flutter Bloc Banking'),
     );
   }
 }
