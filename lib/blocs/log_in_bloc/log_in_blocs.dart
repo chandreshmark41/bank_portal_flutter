@@ -1,6 +1,5 @@
 
 
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,10 +10,20 @@ import 'log_in_state.dart';
 class LogInBloc extends Bloc<LogInEvent, LogInState> {
   //final UserRepository _userRepository;
 
-  LogInBloc() : super(const InitialPageState()) {
+  LogInBloc() : super(MobileLogInState()) {
     on<PickDateEvent>(
         (event, emit) async {
           emit(PickedDateState(event.dateTime));
+        }
+    );
+    on<MobileLogInEvent>(
+        (event, emit) async {
+          emit(MobileLogInState());
+        }
+    );
+    on<CustomerIdLogInEvent>(
+        (event, emit) async {
+          emit(CustomerIdLogInState());
         }
     );
 

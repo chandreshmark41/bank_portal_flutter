@@ -12,7 +12,7 @@ abstract class LogInState extends Equatable {
 class PickedDateState extends LogInState {
 
   const PickedDateState(this.pickedDate);
-  final DateTime pickedDate;
+  final String pickedDate;
 
   @override
   List<Object?> get props => [pickedDate];
@@ -25,4 +25,16 @@ class InitialPageState extends LogInState {
   @override
   List<Object?> get props => [];
 
+}
+
+class MobileLogInState extends LogInState {
+
+  @override
+  List<Object?> get props => [];
+}
+
+class CustomerIdLogInState extends LogInState {
+
+  @override
+  List<Object?> get props => [];
 }

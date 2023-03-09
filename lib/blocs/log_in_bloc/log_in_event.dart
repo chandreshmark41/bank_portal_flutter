@@ -8,7 +8,21 @@ abstract class LogInEvent extends Equatable {
 
 class PickDateEvent extends LogInEvent {
   const PickDateEvent(this.dateTime);
-  final DateTime dateTime;
+  final String dateTime;
   @override
   List<Object?> get props => [dateTime];
+}
+
+class MobileLogInEvent extends LogInEvent {
+
+  @override
+  List<Object?> get props => [];
+
+}
+
+class CustomerIdLogInEvent extends LogInEvent {
+
+  @override
+  List<Object?> get props => [];
+
 }

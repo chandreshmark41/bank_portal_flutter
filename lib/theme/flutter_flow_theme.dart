@@ -43,6 +43,7 @@ abstract class FlutterFlowTheme {
   late Color lineColor;
   late Color axisMarronColor;
   late Color axisRubyColor;
+  late Color axisGreyColor;
   late Color greenValidationColor;
 
   String get title1Family => typography.title1Family;
@@ -77,6 +78,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color lineColor = Color(0xFFE0E3E7);
   late Color axisMarronColor = Color(0xFFAE275F);
   late Color axisRubyColor = Color(0xFFEB1165);
+  late Color axisGreyColor = const Color(0xFFADB2B2);
   late Color greenValidationColor = Color(0xFF4CAF50);
 }
 
@@ -149,7 +151,7 @@ class ThemeTypography extends Typography {
     'Poppins',
     color: theme.secondaryText,
     fontWeight: FontWeight.w400,
-    fontSize: 12,
+    fontSize: 14,
 
   );
 }
@@ -168,6 +170,7 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color lineColor = Color(0xFF22282F);
   late Color axisMarronColor = Color(0xFFAE275F);
   late Color axisRubyColor = Color(0xFF40A269);
+  late Color axisGreyColor = const Color(0xFFADB2B2);
   late Color greenValidationColor = Color(0xFF4CAF50);
 }
 
