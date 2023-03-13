@@ -20,7 +20,8 @@ class PickedDateState extends LogInState {
 }
 
 class InitialPageState extends LogInState {
-  const InitialPageState();
+   InitialPageState();
+
 
   @override
   List<Object?> get props => [];
