@@ -6,26 +6,66 @@ abstract class UserInformationEvent extends Equatable{
 
 }
 
-class NextButtonPersonalInformation extends UserInformationEvent{
+class NextButtonPersonalInformationEvent extends UserInformationEvent{
+
+  NextButtonPersonalInformationEvent(this.data);
+
+  final Map<String, List<String>> data;
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [data];
 }
 
-class BackButtonAddressInformation extends UserInformationEvent {
+class BackButtonAddressInformationEvent extends UserInformationEvent {
+
+  BackButtonAddressInformationEvent(this.data);
+
+  final Map<String, List<String>> data;
 
   //late List<String> cities = ["mumbai", 'bangalore'];
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [data];
 }
 
-class SelectStateValue extends UserInformationEvent {
+class SelectStateValueEvent extends UserInformationEvent {
 
-  SelectStateValue(this.state);
+  SelectStateValueEvent(this.state, this.data);
 
   final String state;
+  final Map<String, List<String>> data;
 
   @override
-  List<Object?> get props => [state];
+  List<Object?> get props => [state, data];
+}
+
+class SelectCityValueEvent extends UserInformationEvent {
+  SelectCityValueEvent(this.city, this.data);
+
+  final String city;
+  final Map<String, List<String>> data;
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => [city, data];
+}
+
+class NextButtonAddressInformationEvent extends UserInformationEvent {
+
+  NextButtonAddressInformationEvent(this.data);
+
+  final Map<String, List<String>> data;
+
+  @override
+  List<Object?> get props => [data];
+
+}
+
+class BackButtonReviewInformationEvent extends UserInformationEvent {
+  BackButtonReviewInformationEvent(this.data);
+
+  final Map<String, List<String>> data;
+
+  @override
+  List<Object?> get props => [data];
 }

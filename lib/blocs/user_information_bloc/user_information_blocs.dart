@@ -4,21 +4,58 @@ import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class UserInformationBloc extends Bloc<UserInformationEvent, UserInformationState> {
-  UserInformationBloc():super(PersonalInformationState("Personal Information","1")) {
-    on<NextButtonPersonalInformation>(
+  UserInformationBloc():super(PersonalInformationState({
+      "states":["Select State","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh (UT)","Chhattisgarh",
+        "Dadra and Nagar Haveli (UT)","Daman and Diu (UT)","Delhi (NCT)","Goa",
+        "Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand",
+        "Karnataka","Kerala","Lakshadweep (UT)","Madhya Pradesh","Maharashtra",
+        "Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Puducherry (UT)",
+        "Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttarakhand",
+        "Uttar Pradesh","West Bengal"],
+      "cities":["                    Select City"],
+      "selected_state":["Select State"],
+      "selected_city":["                    Select City"]
+    }
+    )
+  ) {
+    on<NextButtonPersonalInformationEvent>(
             (event, emit) {
-          emit(AddressInformationState("Address Information", "2", ["Please select City"]));
+          emit(AddressInformationState(event.data));
         }
     );
-    on<BackButtonAddressInformation>(
+    on<BackButtonAddressInformationEvent>(
         (event, emit){
-          emit(PersonalInformationState("Personal Information", "1"));
+          emit(PersonalInformationState(event.data));
         }
     );
-    on<SelectStateValue>(
-        (event, emit){
+
+    on<SelectStateValueEvent>(
+        (event, emit) {
+          event.data["selected_state"] = [event.state];
           var cities = getCityValues(event.state);
-          emit(AddressInformationState("Address Information", "2",cities ));
+          cities.insert(0, "                    Select City");
+          event.data["cities"] = cities;
+
+          emit(AddressInformationState(event.data));
+        }
+    );
+
+    on<SelectCityValueEvent>(
+        (event, emit){
+          event.data["selected_city"] = [event.city];
+          emit(AddressInformationState(event.data));
+        }
+    );
+
+    on<NextButtonAddressInformationEvent> (
+        (event, emit) {
+          emit(ReviewInformationState(event.data));
+        }
+    );
+
+    on<BackButtonReviewInformationEvent> (
+        (event, emit) {
+          emit(AddressInformationState(event.data));
         }
     );
   }
