@@ -56,7 +56,7 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> {
         body: BlocConsumer<OtpBloc,OtpState>(
           listener: (context,state) {
             if(state is SubmitButtonState){
-              Navigator.pushNamed(context, '/user_information_page');
+              Navigator.pushNamed(context, '/user_home_page');
             }
 
           },

@@ -32,3 +32,13 @@ class SendOtpButtonEvent extends LogInEvent{
   @override
   List<Object?> get props => [];
 }
+
+class RegisterButtonEvent extends LogInEvent {
+
+  @override
+  List<Object?> get props => [];
+}
+
+// class InitialPageEvent extends LogInEvent {
+//   @
+// }

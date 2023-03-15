@@ -44,6 +44,7 @@ class _LogInPageState extends State<LogInPage> {
         create: (context) => LogInBloc(),
         child: Scaffold(
           appBar: AppBar(
+            automaticallyImplyLeading: false,
             title: Center(
               child: Text(widget.title),
             ),
@@ -52,6 +53,10 @@ class _LogInPageState extends State<LogInPage> {
           body: BlocConsumer<LogInBloc, LogInState>(listener: (context, state) {
             if (state is SendOtpButtonState) {
               Navigator.pushNamed(context, "/otp_verification_page");
+            }
+
+            if(state is RegisterButtonState) {
+              Navigator.pushNamed(context, "/user_information_page");
             }
           }, builder: (context, state) {
             if (state is MobileLogInState) {
@@ -124,6 +129,21 @@ class _LogInPageState extends State<LogInPage> {
                           ],
                         ),
                       ),
+                      Container(
+                        width: 350,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Are you a new user?", style: FlutterFlowTheme.of(context).bodyText2, ),
+                            TextButton(onPressed: (){
+                              BlocProvider.of<LogInBloc>(context).add(RegisterButtonEvent());
+                              // BlocProvider.of<LogInBloc>(context).add(MobileLogInEvent());
+                            }, child: Text("Register", style: TextStyle(color: FlutterFlowTheme.of(context).axisRubyColor, fontSize: 18, fontWeight: FontWeight.w600),))
+
+                          ],
+                        )
+                      ),
+
                       Container(
                         alignment: Alignment.center,
                         padding: EdgeInsets.fromLTRB(10, 20, 10, 20),

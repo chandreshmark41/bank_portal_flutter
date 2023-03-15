@@ -20,7 +20,7 @@ class PickedDateState extends LogInState {
 }
 
 class InitialPageState extends LogInState {
-   InitialPageState();
+   const InitialPageState();
 
 
   @override
@@ -41,6 +41,12 @@ class CustomerIdLogInState extends LogInState {
 }
 
 class SendOtpButtonState extends LogInState {
+
+  @override
+  List<Object?> get props => [];
+}
+
+class RegisterButtonState extends LogInState {
 
   @override
   List<Object?> get props => [];

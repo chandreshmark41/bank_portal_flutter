@@ -1,7 +1,8 @@
 import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_blocs.dart';
-import 'package:bank_portal_flutter/pages/log_in.dart';
-import 'package:bank_portal_flutter/pages/otp_verification.dart';
-import 'package:bank_portal_flutter/pages/userInformation.dart';
+import 'package:bank_portal_flutter/pages/log_in_page.dart';
+import 'package:bank_portal_flutter/pages/otp_verification_page.dart';
+import 'package:bank_portal_flutter/pages/user_home_page.dart';
+import 'package:bank_portal_flutter/pages/user_information_page.dart';
 import 'package:bank_portal_flutter/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -19,9 +20,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: '/',
       routes: {
-        '/':(context) =>  const LogInPage(title: 'Flutter Bloc Banking'),
+        '/':(context) =>  const LogInPage(title: 'Log In'),
         '/otp_verification_page':(context) => const OtpVerificationPage(),
         '/user_information_page': (context) => const UserInformationPage(),
+        '/user_home_page':(context) => const UserHomePage()
       },
       theme: ThemeData(
         // This is the theme of your application.

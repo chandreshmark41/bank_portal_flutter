@@ -54,6 +54,7 @@ class _UserInformationPageState extends State<UserInformationPage> {
       create: (context) => UserInformationBloc(),
       child: Scaffold(
           appBar: AppBar(
+            //automaticallyImplyLeading: false,
             title: const Center(
               child: Text(
                 'User Information',
