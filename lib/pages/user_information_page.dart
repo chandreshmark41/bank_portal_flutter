@@ -94,6 +94,127 @@ class _UserInformationPageState extends State<UserInformationPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
+                        // Generated code for this Row Widget...
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(20, 20, 20, 20),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).axisRubyColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Personal',
+                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width * 0.15,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).lineColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Address',
+                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width * 0.15,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context).lineColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).lineColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Review',
+                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width * 0.15,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context).lineColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).lineColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -109,6 +230,7 @@ class _UserInformationPageState extends State<UserInformationPage> {
                         SizedBox(
                           height: 20,
                         ),
+
                         Wrap(
                           //crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
@@ -544,6 +666,132 @@ class _UserInformationPageState extends State<UserInformationPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
+
+
+                        /////////////// Progress bar //////////////////
+                        // Generated code for this Row Widget...
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(20, 20, 20, 20),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).axisRubyColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Personal',
+                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width * 0.15,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).axisRubyColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Address',
+                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width * 0.15,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).lineColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Review',
+                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                    Container(
+                                      width: MediaQuery.of(context).size.width * 0.15,
+                                      height: 2,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context).lineColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                child: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).lineColor,
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        ///////////////////////////////////////////////
+
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -1005,697 +1253,824 @@ class _UserInformationPageState extends State<UserInformationPage> {
               if (state is ReviewInformationState) {
                 pageTitle = state.pageTitle;
                 pageNumber = state.pageNumber;
-                return Container(
-                  padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
-                  width: double.infinity,
-                  //color: Colors.grey,
-                  alignment: Alignment.center,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                return
+                  SingleChildScrollView(
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
+                      width: double.infinity,
+                      //color: Colors.grey,
+                      alignment: Alignment.center,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text(
-                            "$pageTitle",
-                            style: FlutterFlowTheme.of(context).title3,
-                          ),
-                          Container(
-                              margin: EdgeInsets.fromLTRB(20, 0, 5, 0),
-                              child: Text("Page $pageNumber/3"))
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Wrap(
-                        //crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                          ////////////////////////////// Progress Bar /////////
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(20, 20, 20, 20),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'First Name:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  child: Container(
+                                    width: 40,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Text(
+                                        'Personal',
+                                        style: FlutterFlowTheme.of(context).bodyText1.override(
                                           fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .axisMarronColor,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: TextFormField(
-                                    enabled: false,
-                                    controller: firstNameController,
-                                    textAlign: TextAlign.center,
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                      contentPadding: EdgeInsets.symmetric(
-                                          vertical: 2, horizontal: 5),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'Last Name:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .axisMarronColor,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: TextFormField(
-                                    enabled: false,
-                                    controller: lastNameController,
-                                    textAlign: TextAlign.center,
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                      contentPadding: EdgeInsets.symmetric(
-                                          vertical: 2, horizontal: 5),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Wrap(
-                        children: [
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'Mobile No:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .axisMarronColor,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: TextFormField(
-                                    enabled: false,
-                                    controller: mobileNumberController,
-                                    textAlign: TextAlign.center,
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                      contentPadding: EdgeInsets.symmetric(
-                                          vertical: 2, horizontal: 5),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'Email:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: FlutterFlowTheme.of(context)
-                                              .axisMarronColor,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: TextFormField(
-                                    enabled: false,
-                                    controller: emailController,
-                                    textAlign: TextAlign.center,
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                      contentPadding: EdgeInsets.symmetric(
-                                          vertical: 2, horizontal: 5),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      /////////////////////////////// Address Information ///////////////
-                      Wrap(
-                        //crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'House/Street/area:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                      fontFamily: 'Poppins',
-                                      color: FlutterFlowTheme.of(context)
-                                          .axisMarronColor,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: TextFormField(
-                                      enabled: false,
-                                      controller: addressController,
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText2,
-
-                                      decoration: const InputDecoration(
-                                        border: OutlineInputBorder(),
-                                        contentPadding: EdgeInsets.symmetric(
-                                            vertical: 2, horizontal: 5),
-                                      ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'State:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                      fontFamily: 'Poppins',
-                                      color: FlutterFlowTheme.of(context)
-                                          .axisMarronColor,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: DropdownButtonFormField(
-                                    enableFeedback: false,
-                                    autovalidateMode:
-                                    AutovalidateMode.onUserInteraction,
-                                    //value: DropdownMenuItem(value: _selectedState, child: Text('$_selectedState'),),
-                                    alignment: Alignment.center,
-                                    focusColor: Colors.transparent,
-                                    style:
-                                    FlutterFlowTheme.of(context).bodyText2,
-                                    // dropdownColor: Colors.transparent,
-                                    // focusColor: Colors.transparent,
-                                    decoration: InputDecoration(
-                                      //fillColor: Colors.yellowAccent,
-                                      border: const OutlineInputBorder(),
-                                      contentPadding: EdgeInsets.symmetric(
-                                          vertical: 2, horizontal: 5),
-
-                                      //labelText: 'Mobile Number',
-                                      // hintText:
-                                      // '6 digit area code',
-                                      hintStyle: FlutterFlowTheme.of(context)
-                                          .bodyText1,
-                                      focusColor: Colors.yellowAccent,
-                                      focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          //color:FlutterFlowTheme.of(context).secondaryText,
-                                            color: FlutterFlowTheme.of(context)
-                                                .greenValidationColor,
-                                            width: 2),
-                                      ),
-                                      focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .axisRubyColor,
-                                          width: 2,
-                                        ),
-                                        //borderRadius: BorderRadius.circular(10),
-                                      ),
-                                    ),
-                                    hint: Text("Select State"),
-                                    value: state.data['selected_state']
-                                        ?.elementAt(0),
-                                    items: state.data['states']
-                                        ?.map((e) => DropdownMenuItem(
-                                        value: e, child: Text(e)))
-                                        .toList(),
-                                    validator: (value) {
-                                      if (value!.isEmpty ||
-                                          value == "Select State") {
-                                        return "Please select State";
-                                      }
-                                      return null;
-                                    },
-                                    onChanged: null,
-                                    //onSaved: () {},
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Wrap(
-                        children: [
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'City:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                      fontFamily: 'Poppins',
-                                      color: FlutterFlowTheme.of(context)
-                                          .axisMarronColor,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                SizedBox(
-                                    height: 70,
-                                    width: 250,
-                                    child: DropdownButtonFormField(
-                                      autovalidateMode:
-                                      AutovalidateMode.onUserInteraction,
-                                      //value: _selectedCity,
-                                      alignment: Alignment.center,
-                                      focusColor: Colors.transparent,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText2,
-                                      // dropdownColor: Colors.transparent,
-                                      // focusColor: Colors.transparent,
-                                      decoration: InputDecoration(
-                                        //fillColor: Colors.yellowAccent,
-                                        border: const OutlineInputBorder(),
-                                        contentPadding: EdgeInsets.symmetric(
-                                            vertical: 2, horizontal: 5),
-
-                                        //labelText: 'Mobile Number',
-                                        // hintText:
-                                        // '6 digit area code',
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .bodyText1,
-                                        focusColor: Colors.yellowAccent,
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            //color:FlutterFlowTheme.of(context).secondaryText,
-                                              color:
-                                              FlutterFlowTheme.of(context)
-                                                  .greenValidationColor,
-                                              width: 2),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .axisRubyColor,
-                                            width: 2,
-                                          ),
-                                          //borderRadius: BorderRadius.circular(10),
+                                          fontSize: 12,
                                         ),
                                       ),
-                                      hint: Text("Select City"),
-                                      value: state.data["selected_city"]
-                                          ?.elementAt(0),
-                                      items: state.data["cities"]
-                                          ?.map((e) => DropdownMenuItem<String>(
-                                          value: e, child: Text(e)))
-                                          .toList(),
-                                      validator: (value) {
-                                        if (value!.isEmpty ||
-                                            value ==
-                                                "                    Select City") {
-                                          return "Please select City";
-                                        }
-                                        return null;
-                                      },
-                                      onChanged: null,
-                                    )),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: 400,
-                            //height: 60,
-                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.lerp(Alignment(0, -0.5),
-                                      Alignment(0, -0.5), 1),
-                                  height: 70,
-                                  width: 100,
-                                  child: Text(
-                                    'Pincode:',
-                                    textAlign: TextAlign.start,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                      fontFamily: 'Poppins',
-                                      color: FlutterFlowTheme.of(context)
-                                          .axisMarronColor,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
+                                      Container(
+                                        width: MediaQuery.of(context).size.width * 0.15,
+                                        height: 2,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context).axisRubyColor,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  child: Container(
+                                    width: 40,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                   ),
                                 ),
-                                SizedBox(
-                                  width: 20,
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Text(
+                                        'Address',
+                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: MediaQuery.of(context).size.width * 0.15,
+                                        height: 2,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context).axisRubyColor,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                                SizedBox(
-                                  height: 70,
-                                  width: 250,
-                                  child: TextFormField(
-                                    enabled: false,
-                                    controller: pinCodeController,
-                                    textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2,
-
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                      contentPadding: EdgeInsets.symmetric(
-                                          vertical: 2, horizontal: 5),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  child: Container(
+                                    width: 40,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Text(
+                                        'Review',
+                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: MediaQuery.of(context).size.width * 0.15,
+                                        height: 2,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context).axisRubyColor,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                                  child: Container(
+                                    width: 40,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context).axisRubyColor,
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                        ],
-                      ),
-                      ////////////////////////////////////////////////////////////////////
+                          /////////////////////////////////////////////////////
 
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 120,
-                            height: 40,
-                            padding: EdgeInsets.all(5),
-                            child: ElevatedButton(
-                              style: ButtonStyle(
-                                overlayColor: MaterialStateProperty.all(
-                                    FlutterFlowTheme.of(context).axisRubyColor),
-                                backgroundColor: MaterialStateProperty.all(
-                                    FlutterFlowTheme.of(context).axisGreyColor),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "$pageTitle",
+                                style: FlutterFlowTheme.of(context).title3,
                               ),
-                              child: new Text('Back'),
-                              onPressed: () {
-                                BlocProvider.of<UserInformationBloc>(context)
-                                    .add(BackButtonReviewInformationEvent(
-                                        state.data));
-                              },
-                            ),
+                              Container(
+                                  margin: EdgeInsets.fromLTRB(20, 0, 5, 0),
+                                  child: Text("Page $pageNumber/3"))
+                            ],
                           ),
-                          Container(
-                            width: 120,
-                            height: 40,
-                            padding: EdgeInsets.all(5),
-                            child: ElevatedButton(
-                              style: ButtonStyle(
-                                overlayColor: MaterialStateProperty.all(
-                                    FlutterFlowTheme.of(context).axisRubyColor),
-                                backgroundColor: MaterialStateProperty.all(
-                                    FlutterFlowTheme.of(context).axisGreyColor),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Wrap(
+                            //crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'First Name:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: TextFormField(
+                                        enabled: false,
+                                        controller: firstNameController,
+                                        textAlign: TextAlign.center,
+                                        style:
+                                        FlutterFlowTheme.of(context).bodyText2,
+                                        decoration: const InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              child: new Text('Submit'),
-                              onPressed: () {
-                                  showModalBottomSheet<void>(
-                                    isDismissible: false,
-                                    context: context,
-                                    isScrollControlled: true,
-                                    backgroundColor: Colors.transparent,
-                                    // builder: (BuildContext context) {
-                                    //
-                                    //   return BlocProvider.value(
-                                    //     value: BlocProvider.of<UserInformationBloc>(context),
-                                    //   child:Container(
-                                    //     height: double.infinity,
-                                    //
-                                    //     alignment: Alignment.center,
-                                    //     //color:
-                                    //     child: Container(
-                                    //       margin: EdgeInsets.all(10),
-                                    //       height: 200,
-                                    //       width: 400,
-                                    //
-                                    //       decoration:  BoxDecoration(
-                                    //         color: FlutterFlowTheme.of(context).primaryBackground,
-                                    //         borderRadius: BorderRadius.circular(10.0),
-                                    //       ),
-                                    //       //color: Colors.,
-                                    //       child: Column(
-                                    //         mainAxisAlignment: MainAxisAlignment.center,
-                                    //         mainAxisSize: MainAxisSize.min,
-                                    //         children: <Widget>[
-                                    //           Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
-                                    //           SizedBox(
-                                    //             height: 10,
-                                    //           ),
-                                    //           Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
-                                    //           SizedBox(
-                                    //             height: 20,
-                                    //           ),
-                                    //           Container(
-                                    //             width: 120,
-                                    //             height: 40,
-                                    //             child: ElevatedButton(
-                                    //               style: ButtonStyle(
-                                    //                 overlayColor:
-                                    //                 MaterialStateProperty.all(
-                                    //                     FlutterFlowTheme.of(context)
-                                    //                         .axisRubyColor),
-                                    //                 backgroundColor:
-                                    //                 MaterialStateProperty.all(
-                                    //                     FlutterFlowTheme.of(context)
-                                    //                         .axisGreyColor),
-                                    //               ),
-                                    //               child: Text('Back To LogIn'),
-                                    //               onPressed: () {
-                                    //                 BlocProvider.of<UserInformationBloc>(context).add(BackToLogInPageEvent());
-                                    //                 Navigator.pop(context);
-                                    //                 // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
-                                    //               },
-                                    //             ),
-                                    //           ),
-                                    //         ],
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    //   );
-                                    // },
-                                    builder: (BuildContext context) {
-                                      return Container(
-                                        height: double.infinity,
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'Last Name:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: TextFormField(
+                                        enabled: false,
+                                        controller: lastNameController,
+                                        textAlign: TextAlign.center,
+                                        style:
+                                        FlutterFlowTheme.of(context).bodyText2,
+                                        decoration: const InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          Wrap(
+                            children: [
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'Mobile No:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: TextFormField(
+                                        enabled: false,
+                                        controller: mobileNumberController,
+                                        textAlign: TextAlign.center,
+                                        style:
+                                        FlutterFlowTheme.of(context).bodyText2,
+                                        decoration: const InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'Email:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: TextFormField(
+                                        enabled: false,
+                                        controller: emailController,
+                                        textAlign: TextAlign.center,
+                                        style:
+                                        FlutterFlowTheme.of(context).bodyText2,
+                                        decoration: const InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          /////////////////////////////// Address Information ///////////////
+                          Wrap(
+                            //crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'House/Street/area:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: TextFormField(
+                                        enabled: false,
+                                        controller: addressController,
+                                        textAlign: TextAlign.center,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2,
 
+                                        decoration: const InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'State:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: DropdownButtonFormField(
+                                        enableFeedback: false,
+                                        autovalidateMode:
+                                        AutovalidateMode.onUserInteraction,
+                                        //value: DropdownMenuItem(value: _selectedState, child: Text('$_selectedState'),),
                                         alignment: Alignment.center,
-                                        //color:
-                                        child: Container(
-                                          margin: EdgeInsets.all(10),
-                                          height: 200,
-                                          width: 400,
+                                        focusColor: Colors.transparent,
+                                        style:
+                                        FlutterFlowTheme.of(context).bodyText2,
+                                        // dropdownColor: Colors.transparent,
+                                        // focusColor: Colors.transparent,
+                                        decoration: InputDecoration(
+                                          //fillColor: Colors.yellowAccent,
+                                          border: const OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
 
-                                          decoration:  BoxDecoration(
-                                            color: FlutterFlowTheme.of(context).primaryBackground,
-                                            borderRadius: BorderRadius.circular(10.0),
+                                          //labelText: 'Mobile Number',
+                                          // hintText:
+                                          // '6 digit area code',
+                                          hintStyle: FlutterFlowTheme.of(context)
+                                              .bodyText1,
+                                          focusColor: Colors.yellowAccent,
+                                          focusedBorder: OutlineInputBorder(
+                                            borderSide: BorderSide(
+                                              //color:FlutterFlowTheme.of(context).secondaryText,
+                                                color: FlutterFlowTheme.of(context)
+                                                    .greenValidationColor,
+                                                width: 2),
                                           ),
-                                          //color: Colors.,
-                                          child: Column(
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            mainAxisSize: MainAxisSize.min,
-                                            children: <Widget>[
-                                              Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
-                                               SizedBox(
-                                                 height: 10,
-                                               ),
-                                               Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
-                                              SizedBox(
-                                                height: 20,
-                                              ),
-                                              Container(
-                                                width: 120,
-                                                height: 40,
-                                                child: ElevatedButton(
-                                                  style: ButtonStyle(
-                                                    overlayColor:
-                                                    MaterialStateProperty.all(
-                                                        FlutterFlowTheme.of(context)
-                                                            .axisRubyColor),
-                                                    backgroundColor:
-                                                    MaterialStateProperty.all(
-                                                        FlutterFlowTheme.of(context)
-                                                            .axisGreyColor),
-                                                  ),
-                                                  child: Text('Back To LogIn'),
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/');
-                                                    //Navigator.pop(context);
-                                                    // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
-                                                  },
-                                                ),
-                                              ),
-                                            ],
+                                          focusedErrorBorder: OutlineInputBorder(
+                                            borderSide: BorderSide(
+                                              color: FlutterFlowTheme.of(context)
+                                                  .axisRubyColor,
+                                              width: 2,
+                                            ),
+                                            //borderRadius: BorderRadius.circular(10),
                                           ),
                                         ),
-                                      );
-                                    },
-                                  );
-
-                                // BlocProvider.of<UserInformationBloc>(context)
-                                //     .add(NextButtonPersonalInformationEvent(state.data));
-                              },
-                            ),
+                                        hint: Text("Select State"),
+                                        value: state.data['selected_state']
+                                            ?.elementAt(0),
+                                        items: state.data['states']
+                                            ?.map((e) => DropdownMenuItem(
+                                            value: e, child: Text(e)))
+                                            .toList(),
+                                        validator: (value) {
+                                          if (value!.isEmpty ||
+                                              value == "Select State") {
+                                            return "Please select State";
+                                          }
+                                          return null;
+                                        },
+                                        onChanged: null,
+                                        //onSaved: () {},
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ),
+                          Wrap(
+                            children: [
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'City:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                        height: 70,
+                                        width: 250,
+                                        child: DropdownButtonFormField(
+                                          autovalidateMode:
+                                          AutovalidateMode.onUserInteraction,
+                                          //value: _selectedCity,
+                                          alignment: Alignment.center,
+                                          focusColor: Colors.transparent,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyText2,
+                                          // dropdownColor: Colors.transparent,
+                                          // focusColor: Colors.transparent,
+                                          decoration: InputDecoration(
+                                            //fillColor: Colors.yellowAccent,
+                                            border: const OutlineInputBorder(),
+                                            contentPadding: EdgeInsets.symmetric(
+                                                vertical: 2, horizontal: 5),
+
+                                            //labelText: 'Mobile Number',
+                                            // hintText:
+                                            // '6 digit area code',
+                                            hintStyle: FlutterFlowTheme.of(context)
+                                                .bodyText1,
+                                            focusColor: Colors.yellowAccent,
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                //color:FlutterFlowTheme.of(context).secondaryText,
+                                                  color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .greenValidationColor,
+                                                  width: 2),
+                                            ),
+                                            focusedErrorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: FlutterFlowTheme.of(context)
+                                                    .axisRubyColor,
+                                                width: 2,
+                                              ),
+                                              //borderRadius: BorderRadius.circular(10),
+                                            ),
+                                          ),
+                                          hint: Text("Select City"),
+                                          value: state.data["selected_city"]
+                                              ?.elementAt(0),
+                                          items: state.data["cities"]
+                                              ?.map((e) => DropdownMenuItem<String>(
+                                              value: e, child: Text(e)))
+                                              .toList(),
+                                          validator: (value) {
+                                            if (value!.isEmpty ||
+                                                value ==
+                                                    "                    Select City") {
+                                              return "Please select City";
+                                            }
+                                            return null;
+                                          },
+                                          onChanged: null,
+                                        )),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                width: 400,
+                                //height: 60,
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      alignment: Alignment.lerp(Alignment(0, -0.5),
+                                          Alignment(0, -0.5), 1),
+                                      height: 70,
+                                      width: 100,
+                                      child: Text(
+                                        'Pincode:',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .axisMarronColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    SizedBox(
+                                      height: 70,
+                                      width: 250,
+                                      child: TextFormField(
+                                        enabled: false,
+                                        controller: pinCodeController,
+                                        textAlign: TextAlign.center,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText2,
+
+                                        decoration: const InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          contentPadding: EdgeInsets.symmetric(
+                                              vertical: 2, horizontal: 5),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          ////////////////////////////////////////////////////////////////////
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 120,
+                                height: 40,
+                                padding: EdgeInsets.all(5),
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    overlayColor: MaterialStateProperty.all(
+                                        FlutterFlowTheme.of(context).axisRubyColor),
+                                    backgroundColor: MaterialStateProperty.all(
+                                        FlutterFlowTheme.of(context).axisGreyColor),
+                                  ),
+                                  child: new Text('Back'),
+                                  onPressed: () {
+                                    BlocProvider.of<UserInformationBloc>(context)
+                                        .add(BackButtonReviewInformationEvent(
+                                        state.data));
+                                  },
+                                ),
+                              ),
+                              Container(
+                                width: 120,
+                                height: 40,
+                                padding: EdgeInsets.all(5),
+                                child: ElevatedButton(
+                                  style: ButtonStyle(
+                                    overlayColor: MaterialStateProperty.all(
+                                        FlutterFlowTheme.of(context).axisRubyColor),
+                                    backgroundColor: MaterialStateProperty.all(
+                                        FlutterFlowTheme.of(context).axisGreyColor),
+                                  ),
+                                  child: new Text('Submit'),
+                                  onPressed: () {
+                                    showModalBottomSheet<void>(
+                                      isDismissible: false,
+                                      context: context,
+                                      isScrollControlled: true,
+                                      backgroundColor: Colors.transparent,
+                                      // builder: (BuildContext context) {
+                                      //
+                                      //   return BlocProvider.value(
+                                      //     value: BlocProvider.of<UserInformationBloc>(context),
+                                      //   child:Container(
+                                      //     height: double.infinity,
+                                      //
+                                      //     alignment: Alignment.center,
+                                      //     //color:
+                                      //     child: Container(
+                                      //       margin: EdgeInsets.all(10),
+                                      //       height: 200,
+                                      //       width: 400,
+                                      //
+                                      //       decoration:  BoxDecoration(
+                                      //         color: FlutterFlowTheme.of(context).primaryBackground,
+                                      //         borderRadius: BorderRadius.circular(10.0),
+                                      //       ),
+                                      //       //color: Colors.,
+                                      //       child: Column(
+                                      //         mainAxisAlignment: MainAxisAlignment.center,
+                                      //         mainAxisSize: MainAxisSize.min,
+                                      //         children: <Widget>[
+                                      //           Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
+                                      //           SizedBox(
+                                      //             height: 10,
+                                      //           ),
+                                      //           Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
+                                      //           SizedBox(
+                                      //             height: 20,
+                                      //           ),
+                                      //           Container(
+                                      //             width: 120,
+                                      //             height: 40,
+                                      //             child: ElevatedButton(
+                                      //               style: ButtonStyle(
+                                      //                 overlayColor:
+                                      //                 MaterialStateProperty.all(
+                                      //                     FlutterFlowTheme.of(context)
+                                      //                         .axisRubyColor),
+                                      //                 backgroundColor:
+                                      //                 MaterialStateProperty.all(
+                                      //                     FlutterFlowTheme.of(context)
+                                      //                         .axisGreyColor),
+                                      //               ),
+                                      //               child: Text('Back To LogIn'),
+                                      //               onPressed: () {
+                                      //                 BlocProvider.of<UserInformationBloc>(context).add(BackToLogInPageEvent());
+                                      //                 Navigator.pop(context);
+                                      //                 // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
+                                      //               },
+                                      //             ),
+                                      //           ),
+                                      //         ],
+                                      //       ),
+                                      //     ),
+                                      //   ),
+                                      //   );
+                                      // },
+                                      builder: (BuildContext context) {
+                                        return Container(
+                                          height: double.infinity,
+
+                                          alignment: Alignment.center,
+                                          //color:
+                                          child: Container(
+                                            margin: EdgeInsets.all(10),
+                                            height: 200,
+                                            width: 400,
+
+                                            decoration:  BoxDecoration(
+                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                              borderRadius: BorderRadius.circular(10.0),
+                                            ),
+                                            //color: Colors.,
+                                            child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.center,
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: <Widget>[
+                                                Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
+                                                SizedBox(
+                                                  height: 10,
+                                                ),
+                                                Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                Container(
+                                                  width: 120,
+                                                  height: 40,
+                                                  child: ElevatedButton(
+                                                    style: ButtonStyle(
+                                                      overlayColor:
+                                                      MaterialStateProperty.all(
+                                                          FlutterFlowTheme.of(context)
+                                                              .axisRubyColor),
+                                                      backgroundColor:
+                                                      MaterialStateProperty.all(
+                                                          FlutterFlowTheme.of(context)
+                                                              .axisGreyColor),
+                                                    ),
+                                                    child: Text('Back To LogIn'),
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/');
+                                                      //Navigator.pop(context);
+                                                      // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
+                                                    },
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                    );
+
+                                    // BlocProvider.of<UserInformationBloc>(context)
+                                    //     .add(NextButtonPersonalInformationEvent(state.data));
+                                  },
+                                ),
+                              ),
+                            ],
+                          )
                         ],
-                      )
-                    ],
-                  ),
-                );
+                      ),
+                    ),
+                  );
+
               }
               return Text("No state");
             },
