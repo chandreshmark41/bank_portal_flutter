@@ -16,12 +16,12 @@ class LogInBloc extends Bloc<LogInEvent, LogInState> {
           emit(PickedDateState(event.dateTime));
         }
     );
-    on<MobileLogInEvent>(
+    on<MobileLogInButtonEvent>(
         (event, emit) async {
           emit(MobileLogInState());
         }
     );
-    on<CustomerIdLogInEvent>(
+    on<CustomerIdLogInButtonEvent>(
         (event, emit) async {
           emit(CustomerIdLogInState());
         }
@@ -39,6 +39,13 @@ class LogInBloc extends Bloc<LogInEvent, LogInState> {
         (event, emit) async {
           emit(RegisterButtonState());
           emit(MobileLogInState());
+        }
+    );
+
+    on<LogInButtonEvent> (
+        (event, emit) {
+          emit(LogInButtonState());
+          emit(CustomerIdLogInState());
         }
     );
 

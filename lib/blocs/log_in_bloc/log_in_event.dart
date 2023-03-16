@@ -13,14 +13,14 @@ class PickDateEvent extends LogInEvent {
   List<Object?> get props => [dateTime];
 }
 
-class MobileLogInEvent extends LogInEvent {
+class MobileLogInButtonEvent extends LogInEvent {
 
   @override
   List<Object?> get props => [];
 
 }
 
-class CustomerIdLogInEvent extends LogInEvent {
+class CustomerIdLogInButtonEvent extends LogInEvent {
 
   @override
   List<Object?> get props => [];
@@ -38,6 +38,13 @@ class RegisterButtonEvent extends LogInEvent {
   @override
   List<Object?> get props => [];
 }
+
+class LogInButtonEvent extends LogInEvent {
+
+  @override
+  List<Object?> get props => [];
+}
+
 
 // class InitialPageEvent extends LogInEvent {
 //   @

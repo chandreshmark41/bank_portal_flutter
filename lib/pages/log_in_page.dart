@@ -58,6 +58,11 @@ class _LogInPageState extends State<LogInPage> {
             if(state is RegisterButtonState) {
               Navigator.pushNamed(context, "/user_information_page");
             }
+
+            if(state is LogInButtonState) {
+              Navigator.pushNamed(context, "/user_home_page");
+            }
+
           }, builder: (context, state) {
             if (state is MobileLogInState) {
               dateTimeString = "DD-MM-YYYY";
@@ -104,7 +109,7 @@ class _LogInPageState extends State<LogInPage> {
                                 child: new Text('Mobile'),
                                 onPressed: () {
                                   BlocProvider.of<LogInBloc>(context)
-                                      .add(MobileLogInEvent());
+                                      .add(MobileLogInButtonEvent());
                                 },
                               ),
                             ),
@@ -122,7 +127,7 @@ class _LogInPageState extends State<LogInPage> {
                                 child: new Text('CustomerId'),
                                 onPressed: () {
                                   BlocProvider.of<LogInBloc>(context)
-                                      .add(CustomerIdLogInEvent());
+                                      .add(CustomerIdLogInButtonEvent());
                                 },
                               ),
                             ),
@@ -707,7 +712,7 @@ class _LogInPageState extends State<LogInPage> {
                                                         .onUserInteraction,
                                                 textAlign: TextAlign.center,
                                                 keyboardType:
-                                                    TextInputType.number,
+                                                    TextInputType.text,
                                                 style: const TextStyle(
                                                   fontSize: 14,
                                                 ),
@@ -790,8 +795,7 @@ class _LogInPageState extends State<LogInPage> {
                                           ),
                                           child: new Text('Log In'),
                                           onPressed: () {
-                                            // BlocProvider.of<LogInBloc>(context)
-                                            //     .add(CustomerIdLogInEvent());
+                                            BlocProvider.of<LogInBloc>(context).add(LogInButtonEvent());
                                           },
                                         ),
                                       ),

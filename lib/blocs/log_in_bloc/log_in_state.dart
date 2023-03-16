@@ -51,3 +51,9 @@ class RegisterButtonState extends LogInState {
   @override
   List<Object?> get props => [];
 }
+
+class LogInButtonState extends LogInState {
+
+  @override
+  List<Object?> get props => [];
+}
