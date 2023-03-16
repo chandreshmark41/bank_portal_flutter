@@ -58,5 +58,11 @@ class UserInformationBloc extends Bloc<UserInformationEvent, UserInformationStat
           emit(AddressInformationState(event.data));
         }
     );
+
+    on<BackToLogInPageEvent> (
+        (event, emit) {
+          emit(BackToLogInPageState());
+        }
+    );
   }
 }

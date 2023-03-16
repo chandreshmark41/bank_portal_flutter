@@ -69,3 +69,9 @@ class BackButtonReviewInformationEvent extends UserInformationEvent {
   @override
   List<Object?> get props => [data];
 }
+
+class BackToLogInPageEvent extends UserInformationEvent {
+
+  @override
+  List<Object?> get props => [];
+}

@@ -64,3 +64,9 @@ class ReviewInformationState extends UserInformationState {
   @override
   List<Object?> get props => [pageTitle, pageNumber, data];
 }
+
+class BackToLogInPageState extends UserInformationState {
+
+  @override
+  List<Object?> get props => [];
+}
