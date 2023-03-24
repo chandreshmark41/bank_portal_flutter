@@ -1,5 +1,5 @@
 import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_blocs.dart';
-import 'package:bank_portal_flutter/pages/log_in_page.dart';
+import 'package:bank_portal_flutter/pages/log_in/log_in_page.dart';
 import 'package:bank_portal_flutter/pages/otp_verification_page.dart';
 import 'package:bank_portal_flutter/pages/user_home_page.dart';
 import 'package:bank_portal_flutter/pages/user_information_page.dart';
