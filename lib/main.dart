@@ -1,8 +1,8 @@
 import 'package:bank_portal_flutter/blocs/log_in_bloc/log_in_blocs.dart';
 import 'package:bank_portal_flutter/pages/log_in/log_in_page.dart';
-import 'package:bank_portal_flutter/pages/otp_verification_page.dart';
+import 'package:bank_portal_flutter/pages/otp_verification/otp_verification_page.dart';
 import 'package:bank_portal_flutter/pages/user_home_page.dart';
-import 'package:bank_portal_flutter/pages/user_information_page.dart';
+import 'package:bank_portal_flutter/pages/user_registration/user_registration_page.dart';
 import 'package:bank_portal_flutter/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/':(context) =>  const LogInPage(title: 'Log In'),
         '/otp_verification_page':(context) => const OtpVerificationPage(),
-        '/user_information_page': (context) => const UserInformationPage(),
+        '/user_information_page': (context) => const UserRegistrationPage(),
         '/user_home_page':(context) => const UserHomePage()
       },
       theme: ThemeData(

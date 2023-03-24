@@ -30,6 +30,10 @@ class InitialPageState extends LogInState {
 
 class MobileLogInState extends LogInState {
 
+  const MobileLogInState();
+
+  //final String dateOfBirth;
+
   @override
   List<Object?> get props => [];
 }

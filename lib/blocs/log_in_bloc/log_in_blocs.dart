@@ -10,15 +10,16 @@ import 'log_in_state.dart';
 class LogInBloc extends Bloc<LogInEvent, LogInState> {
   //final UserRepository _userRepository;
 
-  LogInBloc() : super(MobileLogInState()) {
+  LogInBloc() : super(const MobileLogInState()) {
     on<PickDateEvent>(
         (event, emit) async {
-          emit(PickedDateState(event.dateTime));
+          emit(const MobileLogInState());
+          //emit(PickedDateState(event.dateTime));
         }
     );
     on<MobileLogInButtonEvent>(
         (event, emit) async {
-          emit(MobileLogInState());
+          emit(const MobileLogInState());
         }
     );
     on<CustomerIdLogInButtonEvent>(
@@ -31,14 +32,14 @@ class LogInBloc extends Bloc<LogInEvent, LogInState> {
         (event, emit) async {
           //Navigator.pushNamed(context, "/otp_verification_page");
           emit(SendOtpButtonState());
-          emit(MobileLogInState());
+          emit(const MobileLogInState());
         }
     );
 
     on<RegisterButtonEvent> (
         (event, emit) async {
           emit(RegisterButtonState());
-          emit(MobileLogInState());
+          emit(const MobileLogInState());
         }
     );
 

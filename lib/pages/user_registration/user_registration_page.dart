@@ -4,18 +4,18 @@ import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../blocs/user_information_bloc/user_information_state.dart';
-import '../theme/flutter_flow_theme.dart';
+import '../../blocs/user_information_bloc/user_information_state.dart';
+import '../../theme/flutter_flow_theme.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
-class UserInformationPage extends StatefulWidget {
-  const UserInformationPage({super.key});
+class UserRegistrationPage extends StatefulWidget {
+  const UserRegistrationPage({super.key});
 
   @override
-  State<UserInformationPage> createState() => _UserInformationPageState();
+  State<UserRegistrationPage> createState() => _UserRegistrationPageState();
 }
 
-class _UserInformationPageState extends State<UserInformationPage> {
+class _UserRegistrationPageState extends State<UserRegistrationPage> {
   late TextEditingController firstNameController;
   late TextEditingController lastNameController;
   late TextEditingController mobileNumberController;
