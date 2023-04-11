@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../repos/user_information_repo.dart';
+
 class UserHomePage extends StatefulWidget{
   const UserHomePage({super.key});
 
@@ -21,7 +23,7 @@ class _UserHomePageState extends State<UserHomePage> {
   Widget build(BuildContext context) {
     //return Container();
     return BlocProvider(
-      create: (context) => UserInformationBloc(),
+      create: (context) => UserInformationBloc(RepositoryProvider.of<UserInformationRepository>(context)),
       child: Scaffold(
         appBar: AppBar(title: Center(child:Text("Welcome to Banking")),
         backgroundColor: FlutterFlowTheme.of(context).axisMarronColor,

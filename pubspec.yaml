@@ -34,6 +34,7 @@ dependencies:
   google_fonts: 3.0.1
   flutter_bloc: ^8.1.2
   equatable: ^2.0.5
+  json_annotation:
 
 
 
@@ -55,6 +56,8 @@ dev_dependencies:
   shared_preferences: 2.0.15
   mask_text_input_formatter: 2.4.0
   intl: ^0.18.0
+  build_runner:
+  json_serializable:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

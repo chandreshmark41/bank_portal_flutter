@@ -3,8 +3,11 @@ import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information
 import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../repos/user_information_repo.dart';
+
 class UserInformationBloc extends Bloc<UserInformationEvent, UserInformationState> {
-  UserInformationBloc():super(PersonalInformationState({
+  final UserInformationRepository _userInformationRepository;
+  UserInformationBloc(this._userInformationRepository):super(PersonalInformationState({
       "states":["Select State","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh (UT)","Chhattisgarh",
         "Dadra and Nagar Haveli (UT)","Daman and Diu (UT)","Delhi (NCT)","Goa",
         "Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand",
@@ -63,6 +66,28 @@ class UserInformationBloc extends Bloc<UserInformationEvent, UserInformationStat
         (event, emit) {
           emit(BackToLogInPageState());
         }
+    );
+
+    on<SubmitUserInformationButtonEvent> (
+        (event, emit) async {
+          emit(UserInformationLoadingState());
+          await Future.delayed(const Duration(milliseconds: 2000));
+          emit(UserInformationVerificationState());
+          // await Future.delayed(const Duration(milliseconds: 2000));
+          // emit(SuccessSubmissionUserInformationState());
+
+
+          try {
+            final isSuccess = await _userInformationRepository.submitUserInformation(event.personalInformationModel, event.addressInformationModel);
+            if(isSuccess) {
+              emit(SuccessSubmissionUserInformationState());
+            }
+          }
+          catch (e){
+
+              }
+        }
+
     );
   }
 }

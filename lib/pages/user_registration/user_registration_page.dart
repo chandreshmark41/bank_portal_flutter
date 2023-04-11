@@ -1,6 +1,9 @@
 import 'package:bank_portal_flutter/blocs/common_methods/get_city_values.dart';
 import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information_blocs.dart';
 import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information_event.dart';
+import 'package:bank_portal_flutter/models/address_information_model.dart';
+import 'package:bank_portal_flutter/models/personal_information_model.dart';
+import 'package:bank_portal_flutter/repos/user_information_repo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -54,7 +57,7 @@ class _UserRegistrationPageState extends State<UserRegistrationPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return BlocProvider(
-      create: (context) => UserInformationBloc(),
+      create: (context) => UserInformationBloc(RepositoryProvider.of<UserInformationRepository>(context)),
       child: Scaffold(
           appBar: AppBar(
             //automaticallyImplyLeading: false,
@@ -80,6 +83,57 @@ class _UserRegistrationPageState extends State<UserRegistrationPage> {
             },
             builder: (context, state) {
               //print(state.props.first);
+              if(state is UserInformationLoadingState) {
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Submitting Details..", style: FlutterFlowTheme.of(context).title1,),
+                    Center(
+                        child: Container(
+                            margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                            height: 80,
+                            width: 80,
+                            child: CircularProgressIndicator(
+                              color: Colors.yellow,
+                              strokeWidth: 8,
+                              //value: 5,
+                              //backgroundColor: FlutterFlowTheme.of(context).axisRubyColor,
+                            )
+                        )
+                    )
+                  ],
+                );
+              }
+
+              if(state is UserInformationVerificationState){
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  //crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text("Verifying the Details..", style: FlutterFlowTheme.of(context).title1,),
+
+
+                     Center(
+                      child: Container(
+                        margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                        height: 80,
+                          width: 80,
+                          child: CircularProgressIndicator(
+                            color: Colors.green,
+                            strokeWidth: 8,
+                            //value: 5,
+                            //backgroundColor: FlutterFlowTheme.of(context).axisRubyColor,
+                          )
+                      )
+                    )
+
+                  ],
+                );
+              }
+
+              if(state is SuccessSubmissionUserInformationState){
+                return RegistrationSuccessfulWidget();
+              }
 
               if (state is PersonalInformationState) {
                 pageTitle = state.pageTitle;
@@ -1938,126 +1992,15 @@ class _UserRegistrationPageState extends State<UserRegistrationPage> {
                                   ),
                                   child: new Text('Submit'),
                                   onPressed: () {
-                                    showModalBottomSheet<void>(
-                                      isDismissible: false,
-                                      context: context,
-                                      isScrollControlled: true,
-                                      backgroundColor: Colors.transparent,
-                                      // builder: (BuildContext context) {
-                                      //
-                                      //   return BlocProvider.value(
-                                      //     value: BlocProvider.of<UserInformationBloc>(context),
-                                      //   child:Container(
-                                      //     height: double.infinity,
-                                      //
-                                      //     alignment: Alignment.center,
-                                      //     //color:
-                                      //     child: Container(
-                                      //       margin: EdgeInsets.all(10),
-                                      //       height: 200,
-                                      //       width: 400,
-                                      //
-                                      //       decoration:  BoxDecoration(
-                                      //         color: FlutterFlowTheme.of(context).primaryBackground,
-                                      //         borderRadius: BorderRadius.circular(10.0),
-                                      //       ),
-                                      //       //color: Colors.,
-                                      //       child: Column(
-                                      //         mainAxisAlignment: MainAxisAlignment.center,
-                                      //         mainAxisSize: MainAxisSize.min,
-                                      //         children: <Widget>[
-                                      //           Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
-                                      //           SizedBox(
-                                      //             height: 10,
-                                      //           ),
-                                      //           Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
-                                      //           SizedBox(
-                                      //             height: 20,
-                                      //           ),
-                                      //           Container(
-                                      //             width: 120,
-                                      //             height: 40,
-                                      //             child: ElevatedButton(
-                                      //               style: ButtonStyle(
-                                      //                 overlayColor:
-                                      //                 MaterialStateProperty.all(
-                                      //                     FlutterFlowTheme.of(context)
-                                      //                         .axisRubyColor),
-                                      //                 backgroundColor:
-                                      //                 MaterialStateProperty.all(
-                                      //                     FlutterFlowTheme.of(context)
-                                      //                         .axisGreyColor),
-                                      //               ),
-                                      //               child: Text('Back To LogIn'),
-                                      //               onPressed: () {
-                                      //                 BlocProvider.of<UserInformationBloc>(context).add(BackToLogInPageEvent());
-                                      //                 Navigator.pop(context);
-                                      //                 // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
-                                      //               },
-                                      //             ),
-                                      //           ),
-                                      //         ],
-                                      //       ),
-                                      //     ),
-                                      //   ),
-                                      //   );
-                                      // },
-                                      builder: (BuildContext context) {
-                                        return Container(
-                                          height: double.infinity,
-
-                                          alignment: Alignment.center,
-                                          //color:
-                                          child: Container(
-                                            margin: EdgeInsets.all(10),
-                                            height: 200,
-                                            width: 400,
-
-                                            decoration:  BoxDecoration(
-                                              color: FlutterFlowTheme.of(context).primaryBackground,
-                                              borderRadius: BorderRadius.circular(10.0),
-                                            ),
-                                            //color: Colors.,
-                                            child: Column(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: <Widget>[
-                                                Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
-                                                SizedBox(
-                                                  height: 10,
-                                                ),
-                                                Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
-                                                SizedBox(
-                                                  height: 20,
-                                                ),
-                                                Container(
-                                                  width: 120,
-                                                  height: 40,
-                                                  child: ElevatedButton(
-                                                    style: ButtonStyle(
-                                                      overlayColor:
-                                                      MaterialStateProperty.all(
-                                                          FlutterFlowTheme.of(context)
-                                                              .axisRubyColor),
-                                                      backgroundColor:
-                                                      MaterialStateProperty.all(
-                                                          FlutterFlowTheme.of(context)
-                                                              .axisGreyColor),
-                                                    ),
-                                                    child: Text('Back To LogIn'),
-                                                    onPressed: () {
-                                                      Navigator.pushNamed(context, '/');
-                                                      //Navigator.pop(context);
-                                                      // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
-                                                    },
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        );
-                                      },
+                                    final personalInformationModel = PersonalInformationModel(firstNameController.text, lastNameController.text,
+                                    mobileNumberController.text, emailController.text);
+                                    final addressInformationModel = AddressInformationModel(
+                                        addressController.text, stateController.text, cityController.text,
+                                        pinCodeController.text);
+                                    BlocProvider.of<UserInformationBloc>(context).add(
+                                      SubmitUserInformationButtonEvent(personalInformationModel, addressInformationModel)
                                     );
+
 
                                     // BlocProvider.of<UserInformationBloc>(context)
                                     //     .add(NextButtonPersonalInformationEvent(state.data));
@@ -2072,9 +2015,86 @@ class _UserRegistrationPageState extends State<UserRegistrationPage> {
                   );
 
               }
+
               return Text("No state");
             },
-          )),
+          )
+      ),
+    );
+  }
+
+  // Future<void> RegistrationSuccessBottomSheet(BuildContext context) {
+  //   return showModalBottomSheet<void>(
+  //                                   isDismissible: false,
+  //                                   context: context,
+  //                                   isScrollControlled: true,
+  //                                   backgroundColor: Colors.transparent,
+  //
+  //                                   builder: (BuildContext context) {
+  //                                     return RegistrationSuccessfulWidget();
+  //                                   },
+  //                                 );
+  // }
+}
+
+class RegistrationSuccessfulWidget extends StatelessWidget {
+  const RegistrationSuccessfulWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: double.infinity,
+      alignment: Alignment.center,
+      //color:
+      child: Container(
+        margin: EdgeInsets.all(10),
+        height: 200,
+        width: 400,
+
+        decoration:  BoxDecoration(
+          color: FlutterFlowTheme.of(context).primaryBackground,
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        //color: Colors.,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Icon(Icons.assignment_turned_in, size: 42, color: FlutterFlowTheme.of(context).greenValidationColor,),
+            SizedBox(
+              height: 10,
+            ),
+            Text('Account has been created!', style: FlutterFlowTheme.of(context).title3),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: 120,
+              height: 40,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  overlayColor:
+                  MaterialStateProperty.all(
+                      FlutterFlowTheme.of(context)
+                          .axisRubyColor),
+                  backgroundColor:
+                  MaterialStateProperty.all(
+                      FlutterFlowTheme.of(context)
+                          .axisGreyColor),
+                ),
+                child: Text('Back To LogIn'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/');
+                  //Navigator.pop(context);
+                  // BlocProvider.of<LogInBloc>(context)//     .add(CustomerIdLogInEvent());
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

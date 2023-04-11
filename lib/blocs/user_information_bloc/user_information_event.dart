@@ -1,3 +1,5 @@
+import 'package:bank_portal_flutter/models/address_information_model.dart';
+import 'package:bank_portal_flutter/models/personal_information_model.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
@@ -74,4 +76,15 @@ class BackToLogInPageEvent extends UserInformationEvent {
 
   @override
   List<Object?> get props => [];
+}
+
+class SubmitUserInformationButtonEvent extends UserInformationEvent {
+
+  final PersonalInformationModel personalInformationModel;
+  final AddressInformationModel addressInformationModel;
+
+  SubmitUserInformationButtonEvent(this.personalInformationModel, this.addressInformationModel);
+
+  @override
+  List<Object?> get props => [personalInformationModel, addressInformationModel];
 }

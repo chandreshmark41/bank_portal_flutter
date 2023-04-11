@@ -21,6 +21,10 @@ class MobileCustomerIdRegisterButtonComponent extends StatelessWidget {
     return Column(
       children: [
         Container(
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5) ),
+            //color: FlutterFlowTheme.of(context).axisRubyColor,
+          ),
           width: 350,
           child: ButtonBar(
             mainAxisSize: MainAxisSize.max,

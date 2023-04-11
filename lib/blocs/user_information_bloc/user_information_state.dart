@@ -70,3 +70,27 @@ class BackToLogInPageState extends UserInformationState {
   @override
   List<Object?> get props => [];
 }
+
+class SubmitUserInformationButtonState extends UserInformationState {
+
+  @override
+  List<Object?> get props => [];
+}
+
+class UserInformationLoadingState extends UserInformationState {
+
+  @override
+  List<Object?> get props => [];
+}
+
+class UserInformationVerificationState extends UserInformationState{
+
+  @override
+  List<Object?> get props => [];
+}
+
+class SuccessSubmissionUserInformationState extends UserInformationState{
+
+  @override
+  List<Object?> get props => [];
+}
