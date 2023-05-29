@@ -50,25 +50,6 @@ class LogInBloc extends Bloc<LogInEvent, LogInState> {
         }
     );
 
-    // on<LoadUserEvent>(
-    //         (event, emit) async {
-    //       emit(UserLoadingState());
-    //
-    //       try{
-    //         final users = await _userRepository.getUsers();
-    //         emit(UserLoadedState(users));
-    //       }
-    //       catch(e){
-    //         emit(UserErrorState(e.toString()));
-    //       }
-    //     }
-    // );
-    //
-    // on<SelectUserEvent>(
-    //         (event, emit) async {
-    //       emit(PreUserLoadingState());
-    //     }
-    // );
   }
 
 }

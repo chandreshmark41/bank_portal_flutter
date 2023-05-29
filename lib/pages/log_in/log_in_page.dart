@@ -76,7 +76,8 @@ class _LogInPageState extends State<LogInPage> {
             if (state is LogInButtonState) {
               Navigator.pushNamed(context, "/user_home_page");
             }
-          }, builder: (context, state) {
+          },
+              builder: (context, state) {
             if (state is MobileLogInState) {
               mobileButtonColor = FlutterFlowTheme.of(context).axisRubyColor;
               customerIdButtonColor =
@@ -90,58 +91,65 @@ class _LogInPageState extends State<LogInPage> {
 
             return Container(
                 alignment: Alignment.center,
-                padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
+                padding: const EdgeInsets.fromLTRB(10, 30, 10, 10),
+                //color: Colors.grey[300],
                 //width: 350,
                 child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      MobileCustomerIdRegisterButtonComponent(
-                          mobileButtonColor: mobileButtonColor,
-                          customerIdButtonColor: customerIdButtonColor),
-                      Container(
-                        alignment: Alignment.center,
-                        padding: EdgeInsets.fromLTRB(10, 20, 10, 20),
-                        width: 350,
-                        //height: 250,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Form(
-                          //key: _model.formKey,
-                          autovalidateMode: AutovalidateMode.disabled,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              if (state is MobileLogInState)
-                                MobileLogInComponent(
-                                  mobileNumberController:
+                      Stack(
+                        alignment: AlignmentDirectional.topStart,
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            padding: const EdgeInsets.fromLTRB(10, 120, 10, 20),
+                            width: 350,
+                            //height: 250,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+                            ),
+                            child: Form(
+                              //key: _model.formKey,
+                              autovalidateMode: AutovalidateMode.disabled,
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  if (state is MobileLogInState)
+                                    MobileLogInComponent(
+                                      mobileNumberController:
                                       mobileNumberController,
-                                  panNumberController: panNumberController,
-                                  state: state,
-                                  onSelectDate: () async {
-                                    var datePickedDate = await showDatePicker(
-                                      context: context,
-                                      initialDate: DateTime.now(),
-                                      firstDate: DateTime(1900),
-                                      lastDate: DateTime(2050),
-                                    );
-                                    if (datePickedDate != null) {
-                                      pickedDateTime = DateFormat('dd-MM-yyy')
-                                          .format(datePickedDate);
-                                      BlocProvider.of<LogInBloc>(context)
-                                          .add(PickDateEvent(pickedDateTime));
-                                    }
-                                  },
-                                  pickedDateTime: pickedDateTime,
-                                ),
-                              if (state is CustomerIdLogInState)
-                                CustomerIdLogInComponent(
-                                    customerIdController: customerIdController,
-                                    passwordController: passwordController),
-                            ],
+                                      panNumberController: panNumberController,
+                                      state: state,
+                                      onSelectDate: () async {
+                                        var datePickedDate = await showDatePicker(
+                                          context: context,
+                                          initialDate: DateTime.now(),
+                                          firstDate: DateTime(1900),
+                                          lastDate: DateTime(2050),
+                                        );
+                                        if (datePickedDate != null) {
+                                          pickedDateTime = DateFormat('dd-MM-yyy')
+                                              .format(datePickedDate);
+                                          BlocProvider.of<LogInBloc>(context)
+                                              .add(PickDateEvent(pickedDateTime));
+                                        }
+                                      },
+                                      pickedDateTime: pickedDateTime,
+                                    ),
+                                  if (state is CustomerIdLogInState)
+                                    CustomerIdLogInComponent(
+                                        customerIdController: customerIdController,
+                                        passwordController: passwordController),
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
+                          MobileCustomerIdRegisterButtonComponent(
+                              mobileButtonColor: mobileButtonColor,
+                              customerIdButtonColor: customerIdButtonColor),
+                        ],
                       ),
                     ]
                 ),

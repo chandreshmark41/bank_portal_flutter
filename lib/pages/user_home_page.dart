@@ -1,7 +1,7 @@
 import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information_blocs.dart';
 import 'package:bank_portal_flutter/blocs/user_information_bloc/user_information_state.dart';
 import 'package:bank_portal_flutter/theme/flutter_flow_theme.dart';
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -33,9 +33,6 @@ class _UserHomePageState extends State<UserHomePage> {
 
           } ,
           builder: (context, state){
-            // return Center( child: Container(
-            //   child: Text("Home Page"),
-            // ) );
             return Column(
               mainAxisSize: MainAxisSize.max,
               children: [
