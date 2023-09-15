@@ -1,6 +1,6 @@
 # bank_portal_flutter
 
-A new Flutter project.
+A project for a linear flow of banking client with the reactive form and progress bar using Bloc state management in Flutter.
 
 ## Getting Started
 
